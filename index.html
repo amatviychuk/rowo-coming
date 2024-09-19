@@ -1,0 +1,230 @@
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>
+      ROWO: Engagement platform built specifically for IT-businesses
+    </title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="description" content="Engaged people deliver better" />
+    <meta name="og:description" content="Engaged people deliver better" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rowo.app" />
+
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
+    <meta property="og:image" content="assets/favicon.svg" />
+    <link rel="mask-icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit:cover, maximum-scale=1"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+
+        background-color: #222;
+      }
+
+      .container {
+        position: relative;
+        width: 100vmin;
+        height: 100vmin;
+      }
+
+      .circle {
+        position: absolute;
+        border-radius: 50%;
+        /*border: 2px solid white;*/
+        animation: scale-animation 4s infinite ease-in-out;
+      }
+
+      /* Визначаємо початкові розміри кіл */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+
+        background-color: #fff;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .circle {
+        position: absolute;
+        border-radius: 50%;
+        animation: scale-animation 4s infinite ease-in-out;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      /* Визначаємо початкові розміри кіл у відсотках від контейнера */
+      .circle:nth-child(1) {
+        width: 40%;
+        height: 40%;
+        z-index: 10;
+      }
+      .circle:nth-child(2) {
+        width: 60%;
+        height: 60%;
+        z-index: 9;
+      }
+      .circle:nth-child(3) {
+        width: 80%;
+        height: 80%;
+        z-index: 8;
+      }
+      .circle:nth-child(4) {
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+      }
+      .circle:nth-child(5) {
+        width: 120%;
+        height: 120%;
+        z-index: 6;
+      }
+      .circle:nth-child(6) {
+        width: 140%;
+        height: 140%;
+        z-index: 5;
+      }
+      .circle:nth-child(7) {
+        width: 160%;
+        height: 160%;
+        z-index: 4;
+      }
+      .circle:nth-child(8) {
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+      }
+      .circle:nth-child(9) {
+        width: 90%;
+        height: 90%;
+        z-index: 2;
+      }
+      .circle:nth-child(10) {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      /* Центруємо кола */
+      .circle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Анімація для масштабування */
+      @keyframes scale-animation {
+        0%,
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.15);
+        }
+      }
+
+      /* Каскадний ефект через затримку */
+      .circle:nth-child(1) {
+        animation-delay: 0s;
+        background: #fff;
+        z-index: 10;
+      }
+      .circle:nth-child(2) {
+        animation-delay: 0.2s;
+        background: #83c380;
+        z-index: 9;
+      }
+      .circle:nth-child(3) {
+        animation-delay: 0.4s;
+        background: #96cb91;
+        z-index: 8;
+      }
+      .circle:nth-child(4) {
+        animation-delay: 0.6s;
+        background: #a7d4a3;
+        z-index: 7;
+      }
+      .circle:nth-child(5) {
+        animation-delay: 0.8s;
+        background: #b9ddb5;
+        z-index: 6;
+      }
+      .circle:nth-child(6) {
+        animation-delay: 1s;
+        background: #cae6c6;
+        z-index: 5;
+      }
+      .circle:nth-child(7) {
+        animation-delay: 1.2s;
+        background: #edf7ec;
+        z-index: 4;
+      }
+      .circle:nth-child(8) {
+        animation-delay: 1.4s;
+        background: #fff;
+        z-index: 3;
+      }
+      .circle:nth-child(9) {
+        animation-delay: 1.6s;
+        background: #fff;
+        z-index: 2;
+      }
+      .circle:nth-child(10) {
+        animation-delay: 1.8s;
+        background: #edf7ec;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="root">
+      <div class="app-container">
+        <div
+          className="logo"
+          style="position: absolute; top: 30px; left: 30px"
+          
+        >    <img src="./assets/rowo-logo.svg" style="width:100px" alt="Rovologo"></img>
+    </div>
+    <img class="logospin mobile" src="./assets/logo.svg" />
+
+        <div class="main-text">
+          <img class="logospin desktop" src="./assets/logo.svg" />
+          Engaged teams deliver <span style="font-weight: 500">better</span>
+        </div>
+        <div class="slogan">
+          Engagement platform built specifically for IT-businesses
+        </div>
+        <div class="coming-soon">Coming soon</div>
+      </div>
+    </div>-->
+    <body>
+      <div class="container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="coming">
+        <span style="font-weight: 600">ROWO</span> is Coming
+      </div>
+    </body>
+  </body>
+</html>

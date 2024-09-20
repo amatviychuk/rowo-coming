@@ -21,18 +21,7 @@
       content="width=device-width, initial-scale=1, viewport-fit:cover, maximum-scale=1"
     />
     <style>
-      html,
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-      }
-
       .container {
-        position: relative;
-        width: 100vmin;
-        height: 100vmin;
       }
 
       .circle {
@@ -45,17 +34,15 @@
       /* Визначаємо початкові розміри кіл */
       html,
       body {
-        display: flex;
+        display: grid;
+        place-items: center;
         justify-content: center;
         align-items: center;
         height: 100%;
         margin: 0;
         background-color: #fff;
-        overflow: hidden;
-      }
-
-      .container {
-        position: relative;
+        overflow: visible;
+        position: fixed;
       }
 
       .circle {
@@ -67,38 +54,38 @@
 
       /* Визначаємо початкові розміри кіл у відсотках від контейнера */
       .circle:nth-child(1) {
-        width: 40%;
-        height: 40%;
+        width: 40vmin;
+        height: 40vmin;
         z-index: 10;
       }
       .circle:nth-child(2) {
-        width: 60%;
-        height: 60%;
+        width: 60vmin;
+        height: 60vmin;
         z-index: 9;
       }
       .circle:nth-child(3) {
-        width: 80%;
-        height: 80%;
+        width: 80vmin;
+        height: 80vmin;
         z-index: 8;
       }
       .circle:nth-child(4) {
-        width: 100%;
-        height: 100%;
+        width: 100vmin;
+        height: 100vmin;
         z-index: 7;
       }
       .circle:nth-child(5) {
-        width: 120%;
-        height: 120%;
+        width: 120vmin;
+        height: 120vmin;
         z-index: 6;
       }
       .circle:nth-child(6) {
-        width: 140%;
-        height: 140%;
+        width: 140vmin;
+        height: 140vmin;
         z-index: 5;
       }
       .circle:nth-child(7) {
-        width: 160%;
-        height: 160%;
+        width: 160vmin;
+        height: 160vmin;
         z-index: 4;
       }
       .circle:nth-child(8) {

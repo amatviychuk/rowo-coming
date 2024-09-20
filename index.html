@@ -21,10 +21,25 @@
       content="width=device-width, initial-scale=1, viewport-fit:cover, maximum-scale=1"
     />
     <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        overflow: hidden;
+      }
+
       .container {
-        position: relative;
         width: 100vmin;
         height: 100vmin;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .circle {
@@ -35,15 +50,6 @@
       }
 
       /* Визначаємо початкові розміри кіл */
-      html,
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 0;
-        background-color: #fff;
-      }
 
       .container {
         position: relative;

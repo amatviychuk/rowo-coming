@@ -1,19 +1,134 @@
 @import url("https://fonts.macpaw.com/css?family=FixelDisplay:400;300;500;600;700;800");
 
-body {
-  margin: 0;
-  font-family: "FixelDisplay";
-  overflow: visible;
-  position: fixed; /* Це "зупиняє" скролінг сторінки */
-  width: 100%;
+html,
+body,
+#root {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: FixelDisplay;
+
+  overflow: hidden;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 55;
+  font-weight: 500;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logospin {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.logospin {
+  animation-delay: 1s;
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.43, 0.99, 0.61, 0.01);
+  /* animation-timing-function: cubic-bezier(0.58, 0, 0.25, 1); */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(2520deg);
+  }
+}
+
+.coming-soon {
+  font-size: 16px;
+  padding: 15px 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.slogan {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.main-text {
+}
+
+@media (max-width: 900px) {
+  .slogan {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-text {
+    font-size: 46px;
+  }
+  .logospin {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-text {
+    font-size: 36px;
+  }
+  .logospin {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: inline;
+}
+
+@media (max-width: 500px) {
+  .main-text {
+    font-size: 28px;
+  }
+  .slogan {
+    font-size: 18px;
+  }
+  .logospin {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .mobile {
+    display: inherit;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  .desktop {
+    display: none;
+  }
 }
 
 .coming {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 100;
   font-size: 3.5vmin;
 }
